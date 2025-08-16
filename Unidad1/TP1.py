@@ -26,11 +26,7 @@ print(f"Dado el círculo de radio {radio}, su área es {area} y su perímetro es
 #5) Crear un programa que pida al usuario una cantidad de segundos e 
 # imprima por pantalla a cuántas horas equivale.
 segundos = int(input("Ingrese una cantidad de segundos: "))
-horas = segundos/60
-print(f"{segundos} segundos equivale a {horas} horas")
-#CORRECCIÓN:
-segundos = float(input("Ingrese una cantidad de segundos: "))
-horas = round(segundos / 3600, 2) #redondea la cantidad de decimales que indicamos
+horas = round(segundos/3660,2) #redondea la cantidad de decimales que indicamos
 print(f"{segundos} segundos equivale a {horas} horas")
 
 #6) Crear un programa que pida al usuario un número e 
@@ -61,12 +57,7 @@ print(num1 + " * " + num2 + " = ", int(num1) * int(num2))
 # e imprima por pantalla su índice de masa corporal.
 peso = float(input("Ingrese su peso en kg: "))
 altura = float(input("Ingrese su altura en m: "))
-IMC = peso/altura
-print(f"Su índice de masa corporal es {IMC}")
-#CORRECCIÓN
-peso = float(input("Ingrese su peso en kg: "))
-altura = float(input("Ingrese su altura en m: "))
-IMC = round(peso/altura**2,2) 
+IMC = round(peso/altura**2,2)
 print(f"Su índice de masa corporal es {IMC}")
 
 #9) Crear un programa que pida al usuario una temperatura en grados Celsius 
